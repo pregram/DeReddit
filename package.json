@@ -1,0 +1,45 @@
+{
+  "name": "dereddit",
+  "version": "1.0.0",
+  "description": "A Reddit-like forum dApp: on-chain identities, forums, posts, comments, voting, and crowdfunding, with a Postgres-backed indexer/API and IPFS content storage.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test:contracts && npm run test:backend && npm run test:frontend",
+    "test:contracts": "npx hardhat test",
+    "test:backend": "npm --prefix backend run test",
+    "test:frontend": "npm --prefix frontend run test",
+    "test:e2e": "npm --prefix frontend run test:e2e",
+    "compile": "npx hardhat compile && node scripts/copy-abis.js"
+  },
+  "keywords": [
+    "ethereum",
+    "dapp",
+    "solidity",
+    "hardhat",
+    "ipfs",
+    "reddit-clone"
+  ],
+  "author": "Tamer",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^3.0.0",
+    "@nomicfoundation/hardhat-ethers": "^4.0.11",
+    "@nomicfoundation/hardhat-ignition": "^3.1.5",
+    "@nomicfoundation/hardhat-toolbox-mocha-ethers": "^3.0.5",
+    "@types/chai": "^5.2.3",
+    "@types/chai-as-promised": "^8.0.2",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.19.19",
+    "@types/pg": "^8.21.0",
+    "bs58": "^6.0.0",
+    "chai": "^6.2.2",
+    "dotenv": "^17.4.2",
+    "ethers": "^6.16.0",
+    "forge-std": "github:foundry-rs/forge-std#v1.9.4",
+    "hardhat": "^3.4.5",
+    "mocha": "^11.7.5",
+    "pg": "^8.23.0",
+    "typescript": "~5.8.0"
+  }
+}

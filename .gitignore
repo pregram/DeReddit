@@ -1,0 +1,47 @@
+# Node modules
+/node_modules
+*/node_modules
+
+# Compilation output
+*/dist
+
+# pnpm deploy output
+/bundle
+
+# Hardhat Build Artifacts
+/artifacts
+
+# Hardhat compilation (v2) support directory
+/cache
+
+# Typechain output
+/types
+
+# Environment files
+.env
+.env.*
+!.env.example
+!.env.hardhat.example
+!.env.sepolia.example
+!.env.wallets.example
+
+# Hardhat coverage reports
+/coverage
+
+# Gas snapshot files
+/.gas-snapshot
+
+# Snapshot cheatcodes output
+/snapshots
+
+/logs
+
+# Editor/OS
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# npm/yarn logs written at the repo root (e.g. a failed root `npm install`)
+*.log
+npm-debug.log*

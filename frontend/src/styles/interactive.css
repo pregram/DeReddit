@@ -1,0 +1,15 @@
+/* Standardized hover feedback for feed/hub cards (PostCard, ForumCard) -
+   Mantine's Button/ActionIcon already get a hover state for free from their
+   own theme CSS; this covers the one interactive element type that doesn't. */
+.hoverable-card {
+  transition: box-shadow 100ms ease, border-color 100ms ease;
+}
+.hoverable-card:hover {
+  box-shadow: var(--mantine-shadow-sm);
+  border-color: var(--mantine-color-accent-4);
+}
+
+/* Prevents digit-width jitter in karma/vote/ETH/count displays. */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
