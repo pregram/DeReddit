@@ -39,6 +39,7 @@ Reads feel like an ordinary Web2 app. But every post, comment, and forum can sti
 ## Quick start
 
 Access the [live demo](https://pregram.github.io/DeReddit/) for simplicity. **Note:** The DeReddit server may not be available.
+Yet, you can view UI [here](./docs/WEBSITE_UI.md).
 
 Run the fully local development stack:
 
